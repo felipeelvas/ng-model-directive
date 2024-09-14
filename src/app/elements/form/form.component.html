@@ -1,0 +1,10 @@
+
+<form #meuForm="ngForm">
+    <input [ngModel]="'Nome'" name="nome" required />
+
+    <input [ngModel]="'Idade'" name="idade" required />
+
+    <p>Válido: {{ meuForm.valid }}</p>
+    <p>Tocado: {{ meuForm.touched }}</p>
+    <p>Sujo: {{ meuForm.dirty }}</p>
+</form>
